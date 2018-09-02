@@ -12,6 +12,11 @@
 		36FC822A213896F900593BF9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36FC8228213896F900593BF9 /* MainMenu.xib */; };
 		36FC8233213897CC00593BF9 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FC8232213897CC00593BF9 /* MetalView.swift */; };
 		36FC823621389A0200593BF9 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36FC823521389A0100593BF9 /* MetalKit.framework */; };
+		36FC823E213C7DC300593BF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FC823D213C7DC300593BF9 /* AppDelegate.swift */; };
+		36FC8240213C7DC400593BF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36FC823F213C7DC400593BF9 /* Assets.xcassets */; };
+		36FC8243213C7DC400593BF9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36FC8241213C7DC400593BF9 /* MainMenu.xib */; };
+		36FC824A213C7EBE00593BF9 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FC8249213C7EBE00593BF9 /* MetalView.swift */; };
+		36FC824B213C7ECF00593BF9 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36FC823521389A0100593BF9 /* MetalKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,13 @@
 		36FC822C213896F900593BF9 /* Learn_Metal_01.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Learn_Metal_01.entitlements; sourceTree = "<group>"; };
 		36FC8232213897CC00593BF9 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
 		36FC823521389A0100593BF9 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		36FC823B213C7DC300593BF9 /* Learn Metal 02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learn Metal 02.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36FC823D213C7DC300593BF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		36FC823F213C7DC400593BF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36FC8242213C7DC400593BF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		36FC8244213C7DC400593BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36FC8245213C7DC400593BF9 /* Learn_Metal_02.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Learn_Metal_02.entitlements; sourceTree = "<group>"; };
+		36FC8249213C7EBE00593BF9 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +46,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36FC8238213C7DC300593BF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FC824B213C7ECF00593BF9 /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				36FC8223213896F700593BF9 /* Learn Metal 01 */,
+				36FC823C213C7DC300593BF9 /* Learn Metal 02 */,
 				36FC8222213896F700593BF9 /* Products */,
 				36FC823421389A0100593BF9 /* Frameworks */,
 			);
@@ -50,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				36FC8221213896F700593BF9 /* Learn Metal 01.app */,
+				36FC823B213C7DC300593BF9 /* Learn Metal 02.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +97,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		36FC823C213C7DC300593BF9 /* Learn Metal 02 */ = {
+			isa = PBXGroup;
+			children = (
+				36FC823D213C7DC300593BF9 /* AppDelegate.swift */,
+				36FC823F213C7DC400593BF9 /* Assets.xcassets */,
+				36FC8241213C7DC400593BF9 /* MainMenu.xib */,
+				36FC8244213C7DC400593BF9 /* Info.plist */,
+				36FC8245213C7DC400593BF9 /* Learn_Metal_02.entitlements */,
+				36FC8249213C7EBE00593BF9 /* MetalView.swift */,
+			);
+			path = "Learn Metal 02";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,6 +130,23 @@
 			productReference = 36FC8221213896F700593BF9 /* Learn Metal 01.app */;
 			productType = "com.apple.product-type.application";
 		};
+		36FC823A213C7DC300593BF9 /* Learn Metal 02 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36FC8248213C7DC400593BF9 /* Build configuration list for PBXNativeTarget "Learn Metal 02" */;
+			buildPhases = (
+				36FC8237213C7DC300593BF9 /* Sources */,
+				36FC8238213C7DC300593BF9 /* Frameworks */,
+				36FC8239213C7DC300593BF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Learn Metal 02";
+			productName = "Learn Metal 02";
+			productReference = 36FC823B213C7DC300593BF9 /* Learn Metal 02.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -106,6 +158,9 @@
 				ORGANIZATIONNAME = "Maxime CHAPELET";
 				TargetAttributes = {
 					36FC8220213896F700593BF9 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					36FC823A213C7DC300593BF9 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -124,6 +179,7 @@
 			projectRoot = "";
 			targets = (
 				36FC8220213896F700593BF9 /* Learn Metal 01 */,
+				36FC823A213C7DC300593BF9 /* Learn Metal 02 */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +191,15 @@
 			files = (
 				36FC8227213896F900593BF9 /* Assets.xcassets in Resources */,
 				36FC822A213896F900593BF9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FC8239213C7DC300593BF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FC8240213C7DC400593BF9 /* Assets.xcassets in Resources */,
+				36FC8243213C7DC400593BF9 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +215,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36FC8237213C7DC300593BF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FC824A213C7EBE00593BF9 /* MetalView.swift in Sources */,
+				36FC823E213C7DC300593BF9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -157,6 +231,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				36FC8229213896F900593BF9 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		36FC8241213C7DC400593BF9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36FC8242213C7DC400593BF9 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -315,6 +397,44 @@
 			};
 			name = Release;
 		};
+		36FC8246213C7DC400593BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Learn Metal 02/Learn_Metal_02.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SFF7Z495BM;
+				INFOPLIST_FILE = "Learn Metal 02/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maximechapelet.Learn-Metal-02";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		36FC8247213C7DC400593BF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Learn Metal 02/Learn_Metal_02.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SFF7Z495BM;
+				INFOPLIST_FILE = "Learn Metal 02/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maximechapelet.Learn-Metal-02";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -332,6 +452,15 @@
 			buildConfigurations = (
 				36FC8230213896F900593BF9 /* Debug */,
 				36FC8231213896F900593BF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36FC8248213C7DC400593BF9 /* Build configuration list for PBXNativeTarget "Learn Metal 02" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36FC8246213C7DC400593BF9 /* Debug */,
+				36FC8247213C7DC400593BF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
